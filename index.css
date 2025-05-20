@@ -21,7 +21,7 @@ input {
 
 input:focus {
     outline: none;
-    box-shadow: 0 0 2px rgb(100,100,100);
+    box-shadow: 0 0 3px rgb(200,200,200);
 }
 
 #search-form {
