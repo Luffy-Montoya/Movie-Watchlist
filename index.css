@@ -1,16 +1,65 @@
 body{
     width: 500px;
     justify-self: center;
-    font-family: sans-serif
+    font-family: sans-serif;
+    background: rgb(250,250,250);
 }
 
 input {
-    background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
-    background-color: rgb(255,255,255,0.65);
+    background: url("https://img.icons8.com/ios7/600/search.png") no-repeat left/7%;
+    background-color: rgb(255,255,255,0.6);
     background-blend-mode: lighten;
-    background-size: contain;
-    color: blue;
-    padding-left: 1.5em;
+    background-position: 2.5% 45%;
+    padding-left: 2.1em;
+    border: 1px solid gray;
+    border-radius: 17px 0 0 17px;
+    line-height: 1.75;
+    width: 50%;
+    font-size: 1rem;
+}
+
+#search-form {
+    display: flex;
+    margin-top: 1em;
+}
+
+#button {
+    border: 1px solid gray;
+    border-left: none;
+    border-radius: 0 17px 17px 0;
+    padding-right: .65em;
+    background: linear-gradient(
+        180deg, 
+        rgb(190,190,190), 
+        rgb(220, 220, 220)10%,
+        rgb(240, 240, 240)50%,
+        rgb(220, 220, 220)90%,
+        rgb(190,190,190));
+    color: rgb(75,75,75);
+}
+
+#button:hover {
+    background: linear-gradient(
+        180deg, 
+        rgb(200,200,200), 
+        rgb(230, 230, 230)10%,
+        rgb(250, 250, 250)50%,
+        rgb(230, 230, 230)90%,
+        rgb(200,200,200));
+    color: rgb(100,100,100);
+    cursor: pointer;
+}
+
+#button:active {
+    background: linear-gradient(
+        180deg, 
+        rgb(210,210,210), 
+        rgb(240, 240, 240)10%,
+        rgb(255, 255, 255)50%,
+        rgb(240, 240, 240)90%,
+        rgb(210,210,210));
+    color: rgb(125,125,125);
+    cursor: pointer;
 }
 
 .result-container {
@@ -18,7 +67,7 @@ input {
     height: 18em;
     align-items: center;
     border-bottom: 2px solid rgb(220, 220, 220);
-    margin: .5em .75em
+    margin: .5em .5em
 }
 
 .second-row {
@@ -49,12 +98,11 @@ input {
     border: 1px solid rgb(125,125,125);
     color: white;
     background: linear-gradient(180deg, rgb(150,150,150), rgb(225,225,225));
-    font-size: .75rem;
+    font-size: 1.5rem;
     cursor: pointer;
-    padding: 4px 5px;
+    padding: 6px 7px;
     border-radius: 50%;
     box-shadow: 0 1px 2px rgb(0, 0, 0, 0.7);
-    transition: all 2s;
 }
 
 .add-to-watchlist:hover {
@@ -87,9 +135,9 @@ input {
     border: 1px solid rgb(125,25,25);
     color: white;
     background: linear-gradient(180deg, rgb(200,50,50), rgb(245,155,155));
-    font-size: .75rem;
+    font-size: 1.5rem;
     cursor: pointer;
-    padding: 4px 5px;
+    padding: 6px 7px;
     border-radius: 50%;
     box-shadow: 0 1px 2px rgb(50, 0, 0, 0.7);
 }
