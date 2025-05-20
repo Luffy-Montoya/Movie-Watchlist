@@ -7,7 +7,7 @@ body{
 }
 
 input {
-    background: url("https://img.icons8.com/ios7/600/search.png") no-repeat left/4.5%;
+    background: url("https://img.icons8.com/ios7/600/search.png") no-repeat left/1.35em;
     background-color: rgb(255,255,255,0.6);
     background-blend-mode: lighten;
     background-position: 2% 45%;
