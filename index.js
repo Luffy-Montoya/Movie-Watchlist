@@ -56,14 +56,12 @@ function addRemove(e){
         localStorage.setItem("watchList", JSON.stringify(watchList))
         document.getElementById(`${e.target.id}-watch`).innerText = "Added"
         e.target.classList.toggle("added")
-        console.log(watchList)
     } else if (e.target.className === "add-to-watchlist fa-solid fa-plus added"){
         e.target.classList.toggle("added")
         document.getElementById(`${e.target.id}-watch`).innerText = "Watchlist"
         let index = watchList.indexOf(e.target.id)
         watchList.splice(index, 1)
         localStorage.setItem("watchList", JSON.stringify(watchList))
-        console.log(watchList)
     }
 }
 
