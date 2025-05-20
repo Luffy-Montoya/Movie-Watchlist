@@ -1,9 +1,9 @@
 body{
-    max-width: calc(450px + 20vw);
+    max-width: calc(500px + 20vw);
     width: 100%;
-    margin: 0 auto;
     font-family: sans-serif;
     background: rgb(250,250,250);
+    margin: 0 auto;
 }
 
 input {
@@ -17,6 +17,11 @@ input {
     line-height: 1.75;
     width: 50%;
     font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 2px rgb(100,100,100);
 }
 
 #search-form {
@@ -105,6 +110,7 @@ input {
     padding: 5px 6px;
     border-radius: 50%;
     box-shadow: 0 1px 2px rgb(0, 0, 0, 0.7);
+    margin-right: .15em;
 }
 
 .add-to-watchlist:hover {
@@ -142,6 +148,7 @@ input {
     padding: 5px 6px;
     border-radius: 50%;
     box-shadow: 0 1px 2px rgb(50, 0, 0, 0.7);
+    margin-right: .15em;
 }
 
 .remove:hover {
