@@ -1,5 +1,5 @@
 body {
-    max-width: calc(500px + 20vw);
+    max-width: 500px;
     width: 100%;
     font-family: sans-serif;
     background: rgb(250,250,250);
@@ -255,5 +255,9 @@ input:focus {
 @media (min-width: 600px) and (max-width:1000px) {
     .movie-poster {
         max-height: 50vh;
+    }
+
+    body {
+        max-width: 90vw;
     }
 }
