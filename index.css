@@ -216,12 +216,12 @@ input:focus {
 .watched-container {
     display: flex;
     align-items: center;
-    gap: .5em;
     color: rgb(175,175,175)
 }
 
 .checkmark {
     font-size: 1.2rem;
+    padding: .25em .25em .25em 0;
 }
 
 .checkmark:hover {
