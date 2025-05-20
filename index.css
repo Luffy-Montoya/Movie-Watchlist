@@ -233,3 +233,9 @@ input:focus {
 .watched:hover {
     color: rgb(125, 215, 170)
 }
+
+@media (min-width: 600px) and (max-width:1000px) {
+    .movie-poster {
+        max-height: 50vh;
+    }
+}
