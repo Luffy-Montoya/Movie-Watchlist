@@ -1,5 +1,6 @@
 body{
-    width: 500px;
+    max-width: calc(500px + 20vw);
+    width: 100%;
     justify-self: center;
     font-family: sans-serif;
     background: rgb(250,250,250);
