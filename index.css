@@ -109,7 +109,7 @@ input:focus {
 
 .result-header {
     display: flex;
-    gap: 1.5em;
+    gap: .75em;
 }
 
 .movie-poster {
