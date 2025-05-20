@@ -72,7 +72,7 @@ function remove(e){
             document.getElementById(`${e.target.id}-watch`).innerText = "Remove"
             removeText.style.color = "rgb(125,125,125)"
             confirm = false
-        }, 1250)
+        }, 1500)
         e.target.addEventListener("click", () => {
             if (confirm === true) {
                 let index = watchList.indexOf(e.target.id)
