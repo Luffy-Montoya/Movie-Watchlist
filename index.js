@@ -1,17 +1,24 @@
 const searchInput = document.getElementById("search-input")
 const searchForm = document.getElementById("search-form")
 const resultsSection = document.getElementById("results-section")
+const watchlistLocalStorage = JSON.parse(localStorage.getItem("watchList"))
+const lastSearchLocalStorage = JSON.parse (localStorage.getItem("lastSearch"))
 let watchList = []
-const watchlistLocalStorage = JSON.parse( localStorage.getItem("watchList") )
 
 if (watchlistLocalStorage) {
     watchList = watchlistLocalStorage
+}
+
+if (lastSearchLocalStorage) {
+    searchInput.value = lastSearchLocalStorage
+    getData()
 }
 
 async function getData() {
     const res = await fetch(`https://www.omdbapi.com/?s=${searchInput.value}&apikey=c67d68ae`)
     const data = await res.json()
     const results = data.Search
+    resultsSection.innerHTML = ""
 
     results.map(async function(obj){
         const filmRes = await fetch(`https://www.omdbapi.com/?i=${obj.imdbID}&apikey=c67d68ae`)
@@ -59,15 +66,14 @@ function addRemove(e){
     } else if (e.target.className === "add-to-watchlist fa-solid fa-plus added"){
         e.target.classList.toggle("added")
         document.getElementById(`${e.target.id}-watch`).innerText = "Watchlist"
-        let index = watchList.indexOf(e.target.id)
-        watchList.splice(index, 1)
+        watchList.splice(watchList.indexOf(e.target.id), 1)
         localStorage.setItem("watchList", JSON.stringify(watchList))
     }
 }
 
 searchForm.addEventListener("submit", function(e) {
     e.preventDefault()
-    resultsSection.innerHTML = ""
+    localStorage.setItem("lastSearch", JSON.stringify(searchInput.value))
     getData()
 })
 
