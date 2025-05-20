@@ -75,7 +75,6 @@ function remove(e){
         }, 1250)
         e.target.addEventListener("click", () => {
             if (confirm === true) {
-                console.log("remove")
                 let index = watchList.indexOf(e.target.id)
                 watchList.splice(index, 1)
                 localStorage.setItem("watchList", JSON.stringify(watchList))
@@ -111,6 +110,4 @@ function updateWatched(e) {
 }
 
 document.addEventListener("click", remove)
-
-console.log(markedWatched)
 
