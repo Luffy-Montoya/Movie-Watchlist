@@ -65,10 +65,10 @@ input {
 
 .result-container {
     display: flex;
-    height: 18em;
     align-items: center;
     border-bottom: 2px solid rgb(220, 220, 220);
-    margin: .5em .5em
+    margin: 0 1em;
+    padding: 1em 0;
 }
 
 .second-row {
@@ -90,9 +90,10 @@ input {
 }
 
 .movie-poster {
-    max-height: 85%;
+    max-height: 18em;
     margin-right: 1em;
-    max-width: 31%;
+    max-width: 15em;
+    justify-self: center;
 }
 
 .add-to-watchlist {
@@ -164,7 +165,7 @@ input {
 .rating-container {
     display: flex;
     gap:.3em;
-    margin-right: .5em
+    margin-right: .5em;
 }
 
 .add-container, .watched-container {
