@@ -90,9 +90,9 @@ input {
 }
 
 .movie-poster {
-    max-height: 18em;
+    max-height: 30vh;
     margin-right: 1em;
-    max-width: 15em;
+    max-width: 30vw;
     justify-self: center;
 }
 
