@@ -114,6 +114,7 @@ input {
 .rating-container {
     display: flex;
     gap:.3em;
+    margin-right: .5em
 }
 
 .add-container, .watched-container {
