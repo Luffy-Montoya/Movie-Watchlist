@@ -22,7 +22,6 @@ async function renderWatchList(){
     watchList.map(async function(obj){
         const filmRes = await fetch(`https://www.omdbapi.com/?i=${obj}&apikey=c67d68ae`)
         const filmData = await filmRes.json()
-        console.log(filmData)
         
         watchlistResults.innerHTML += `
             <div id="${obj}-div" class="result-container">
