@@ -96,7 +96,7 @@ input:focus {
 }
 
 .movie-poster {
-    max-height: 30vh;
+    max-height: calc(25vw - 15vh);
     margin-right: 1em;
     max-width: 30vw;
     justify-self: center;
