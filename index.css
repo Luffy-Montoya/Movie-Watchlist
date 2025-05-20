@@ -104,6 +104,7 @@ input:focus {
     display: flex;
     flex-direction: column;
     gap: .5em;
+    width: 100%;
 }
 
 .result-header {
