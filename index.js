@@ -9,12 +9,12 @@ if (watchlistLocalStorage) {
 }
 
 async function getData() {
-    const res = await fetch(`http://www.omdbapi.com/?s=${searchInput.value}&apikey=c67d68ae`)
+    const res = await fetch(`https://www.omdbapi.com/?s=${searchInput.value}&apikey=c67d68ae`)
     const data = await res.json()
     const results = data.Search
 
     results.map(async function(obj){
-        const filmRes = await fetch(`http://www.omdbapi.com/?i=${obj.imdbID}&apikey=c67d68ae`)
+        const filmRes = await fetch(`https://www.omdbapi.com/?i=${obj.imdbID}&apikey=c67d68ae`)
         const filmData = await filmRes.json()
         
         resultsSection.innerHTML += `
