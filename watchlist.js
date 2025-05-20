@@ -81,32 +81,31 @@ function remove(e){
                 document.getElementById(`${e.target.id}-div`).remove()
             }
         })
-    } else if (e.target.className === "checkmark fa-solid fa-check" || "checkmark fa-solid fa-check watched") {
+    } else if (e.target.className === "checkmark fa-solid fa-check watched" ||
+        e.target.className === "checkmark fa-solid fa-check"){
         updateWatched(e)
-        
     }
 }
 
 function updateWatched(e) {
-    if (e.target.className === "checkmark fa-solid fa-check watched" ||
-        e.target.className === "checkmark fa-solid fa-check") {
-        let checkmark = document.getElementById(`${e.target.id}`)
-        let watchedEl = document.getElementById(`${e.target.id}marked`)
-        if (!markedWatched.includes(`${e.target.id}`)) {
-                watchedEl.innerText = "Watched!"
-                watchedEl.style.color = "black"
-                checkmark.classList.toggle("watched")
-                markedWatched.push(e.target.id)
-                localStorage.setItem("markedWatched", JSON.stringify(markedWatched))
-            } else if (markedWatched.includes(`${e.target.id}`)) {
-                watchedEl.innerText = "Mark as Watched"
-                watchedEl.style.color = "rgb(175,175,175)"
-                checkmark.classList.toggle("watched")
-                let index = markedWatched.indexOf(e.target.id)
-                markedWatched.splice(index, 1)
-                localStorage.setItem("markedWatched", JSON.stringify(markedWatched))
-            }
+     
+    let checkmark = document.getElementById(`${e.target.id}`)
+    let watchedEl = document.getElementById(`${e.target.id}marked`)
+    if (!markedWatched.includes(`${e.target.id}`)) {
+        watchedEl.innerText = "Watched!"
+        watchedEl.style.color = "black"
+        checkmark.classList.toggle("watched")
+        markedWatched.push(e.target.id)
+        localStorage.setItem("markedWatched", JSON.stringify(markedWatched))
+    } else if (markedWatched.includes(`${e.target.id}`)) {
+        watchedEl.innerText = "Mark as Watched"
+        watchedEl.style.color = "rgb(175,175,175)"
+        checkmark.classList.toggle("watched")
+        let index = markedWatched.indexOf(e.target.id)
+        markedWatched.splice(index, 1)
+        localStorage.setItem("markedWatched", JSON.stringify(markedWatched))
     }
+    
 }
 
 document.addEventListener("click", remove)
