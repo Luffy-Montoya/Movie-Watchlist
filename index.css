@@ -1,0 +1,173 @@
+body{
+    width: 500px;
+    justify-self: center;
+    font-family: sans-serif
+}
+
+input {
+    background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
+    background-color: rgb(255,255,255,0.65);
+    background-blend-mode: lighten;
+    background-size: contain;
+    color: blue;
+    padding-left: 1.5em;
+}
+
+.result-container {
+    display: flex;
+    height: 18em;
+    align-items: center;
+    border-bottom: 2px solid rgb(220, 220, 220);
+}
+
+.second-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 0;
+}
+
+.movie-description {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.result-header {
+    display: flex;
+    gap: 1.5em;
+}
+
+.movie-poster {
+    max-height: 85%;
+    margin-right: 1em;
+    max-width: 31%;
+}
+
+.add-to-watchlist {
+    border: 1px solid rgb(125,125,125);
+    color: white;
+    background: linear-gradient(180deg, rgb(150,150,150), rgb(225,225,225));
+    font-size: .75rem;
+    cursor: pointer;
+    padding: 4px 5px;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgb(0, 0, 0, 0.7);
+}
+
+.add-to-watchlist:hover {
+    background: linear-gradient(180deg, rgb(175,175,175), rgb(235,235,235));
+    border: 1px solid rgb(150, 150, 150);
+}
+
+.add-to-watchlist:active {
+    background: linear-gradient(180deg, rgb(200,200,200), rgb(245,245,245));
+    border: 1px solid rgb(175, 175, 175);
+}
+
+.added {
+    background: linear-gradient(180deg, rgb(225, 177, 24), rgb(255,245,175));
+    border: 1px solid rgb(175,125,15);
+    box-shadow: 0 1px 2px rgb(75, 50, 0, 0.7);
+}
+
+.added:hover {
+    background: linear-gradient(180deg, rgb(240, 200, 24), rgb(255,255,185));
+    border: 1px solid rgb(200,150,5);
+}
+
+.added:active {
+    background: linear-gradient(180deg, rgb(250, 225, 24), rgb(255,255,205));
+    border: 1px solid rgb(235,185,25);
+}
+
+.remove {
+    border: 1px solid rgb(125,25,25);
+    color: white;
+    background: linear-gradient(180deg, rgb(200,50,50), rgb(245,155,155));
+    font-size: .75rem;
+    cursor: pointer;
+    padding: 4px 5px;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgb(50, 0, 0, 0.7);
+}
+
+.remove:hover {
+    background: linear-gradient(180deg, rgb(235,80,80), rgb(250,175,175));
+    border: 1px solid rgb(150,35,35);
+}
+
+.remove:active {
+    background: linear-gradient(180deg, rgb(245,100,100), rgb(255,190,190));
+    border: 1px solid rgb(175,50,50);
+}
+
+.genres, .year, .runtime, .watchlist-label {
+    font-size: .9rem;
+}
+
+.star {
+   color: rgb(245, 197, 24);
+}
+
+.rating-container {
+    display: flex;
+    gap:.3em;
+}
+
+.add-container, .watched-container {
+    display: flex;
+    align-items: center;
+    gap: .25em;
+}
+
+.plot, .runtime {
+    color: rgb(120, 120, 120)
+}
+
+.title {
+    font-size: 1.1rem;
+}
+
+.year-time {
+    display: flex;
+    gap: 1.25em;
+}
+
+.watched-container {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    color: rgb(175,175,175)
+}
+
+.checkmark {
+    font-size: 1.2rem;
+}
+
+.checkmark:hover {
+    color: rgb(215,215,215);
+    cursor: pointer;
+}
+
+.checkmark:active {
+    color: rgb(230,230,230);
+}
+
+.mark-as-watched {
+    font-size: .85rem;
+}
+
+.remove-text {
+    font-size: .85rem;
+    color: rgb(125,125,125);
+}
+
+.watched {
+    color: rgb(25,200,75);
+    font-size: 1.5rem;
+}
+
+.watched:hover {
+    color: rgb(125, 215, 170)
+}
