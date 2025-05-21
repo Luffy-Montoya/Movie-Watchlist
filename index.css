@@ -300,6 +300,7 @@ input:focus {
 }
 
 .empty-link {
+    color: rgb(75,75,75)
     text-decoration: underline rgb(175,175,190);
 }
 
