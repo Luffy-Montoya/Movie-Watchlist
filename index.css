@@ -12,7 +12,7 @@ header {
     justify-content: space-between;
     padding: 0 4vw;
     align-content: center;
-    background: linear-gradient(165deg, rgb(50, 50, 20, 0.9), rgb(25, 25, 75, 0.8)), url("https://wallpapercat.com/w/full/1/a/f/1381070-3840x2160-desktop-4k-film-wallpaper-image.jpg");
+    background: linear-gradient(165deg, rgb(40, 40, 20, 0.9), rgb(25, 25, 75, 0.8)), url("https://wallpapercat.com/w/full/1/a/f/1381070-3840x2160-desktop-4k-film-wallpaper-image.jpg");
     background-size: cover;
     height: 25vh;
     padding-bottom: 1em;
@@ -20,7 +20,7 @@ header {
 }
 
 .watch-header {
-    background: linear-gradient(165deg, rgb(50, 50, 20, 0.9), rgb(25, 25, 75, 0.85)), url("https://wallpapers.com/images/hd/movie-poster-background-q1zm830g0hfww2lk.jpg");
+    background: linear-gradient(165deg, rgb(40, 40, 20, 0.9), rgb(25, 25, 75, 0.85)), url("https://wallpapers.com/images/hd/movie-poster-background-q1zm830g0hfww2lk.jpg");
     background-size: cover;
     padding-bottom: 0;
     margin-bottom: 1em;
