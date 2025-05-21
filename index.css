@@ -300,12 +300,12 @@ input:focus {
 }
 
 .empty-link {
-    color: rgb(75,75,75)
+    color: rgb(75,75,75);
     text-decoration: underline rgb(175,175,190);
 }
 
 .empty-link:visited {
-    color: rgb(75,75,75)
+    color: rgb(75,75,75);
 }
 
 .empty-link:hover {
