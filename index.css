@@ -2,7 +2,7 @@ body {
     max-width: 500px;
     width: 100%;
     font-family: sans-serif;
-    background: rgb(235,235,240);
+    background: rgb(215,215,225);
     margin: 0 auto;
 }
 
@@ -15,12 +15,15 @@ header {
     background-size: cover;
     height: 25vh;
     padding-bottom: 1em;
+    box-shadow: 0 2px 7px rgb(0,0,0,0.5)
 }
 
 .watch-header {
     background: linear-gradient(165deg, rgb(50, 50, 20, 0.9), rgb(25, 25, 75, 0.85)), url("https://wallpapers.com/images/hd/movie-poster-background-q1zm830g0hfww2lk.jpg");
     background-size: cover;
     padding-bottom: 0;
+    margin-bottom: .75em;
+    box-shadow: 0 2px 7px rgb(0,0,0,0.5)
 }
 
 .heading {
@@ -48,7 +51,7 @@ header {
 }
 
 .watchlist-link:hover {
-    text-shadow: 0 0 7px rgb(255,255,255, 0.5);
+    text-shadow: 0 0 7px rgb(255,255,240, 0.5);
     transition: .2s;
 }
 
@@ -64,12 +67,13 @@ input {
     font-size: 1rem;
     justify-self: center;
     opacity: 100%;
+    box-shadow: 0 0 7px rgb(0,0,0,0.25)
 }
 
 input:focus {
     outline: none;
-    box-shadow: 0 0 4px rgb(175,175,175);
     transition: .1s;
+    box-shadow: 0 0 5px rgb(255,255,235,0.75)
 }
 
 #search-form {
@@ -96,6 +100,7 @@ input:focus {
         rgb(220, 220, 220)90%,
         rgb(190,190,190));
     color: rgb(75,75,75);
+    box-shadow: 0 0 7px rgb(0,0,0,0.25)
 }
 
 #button:hover {
@@ -126,8 +131,10 @@ input:focus {
     display: flex;
     align-items: center;
     border-bottom: 2px solid rgb(220, 220, 220);
+    background: rgb(235,235,240);
     margin: 0 1em;
-    padding: 1em 0;
+    padding: 1em;
+    
 }
 
 .second-row {
@@ -323,6 +330,7 @@ input:focus {
 
     .movie-poster {
         max-height: 50vh;
+        max-height: 300px;
     }
 
     body {
@@ -333,6 +341,10 @@ input:focus {
         height: 40vh;
         padding: 0 6vw;
         padding-bottom: .75em;
+    }
+
+    .watch-header {
+        margin-bottom: 1em;
     }
 
     .watchlist-link {
@@ -372,5 +384,15 @@ input:focus {
         font-size: 1.25rem;
         margin-top: 1em;
         margin-right: 4.5em;
+    }
+
+    .watch-header {
+        margin-bottom: .5em;
+    }
+
+    .result-container {
+        margin: .5em;
+        box-shadow: 0 2px 7px rgb(0,0,0,0.15);
+        border-bottom: none;
     }
 }
