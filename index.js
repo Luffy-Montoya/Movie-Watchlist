@@ -33,7 +33,7 @@ async function getData() {
                     onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoWcWg0E8pSjBNi0TtiZsqu8uD2PAr_K11DA&s'">
                 <div class="movie-description">
                     <div class="result-header">
-                        <div class="title">${filmData.Title}</div>
+                        <a href="https://www.imdb.com/title/${obj.imdbID}/" class="title" target="_blank">${filmData.Title}</a>
                         <div class="rating-container">
                             <i class="star fa-solid fa-star"></i>
                             <div class="rating">${filmData.imdbRating}</div>
