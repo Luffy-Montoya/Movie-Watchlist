@@ -23,7 +23,7 @@ header {
     background: linear-gradient(165deg, rgb(50, 50, 20, 0.9), rgb(25, 25, 75, 0.85)), url("https://wallpapers.com/images/hd/movie-poster-background-q1zm830g0hfww2lk.jpg");
     background-size: cover;
     padding-bottom: 0;
-    margin-bottom: .75em;
+    margin-bottom: 1em;
     box-shadow: 0 2px 7px rgb(0,0,0,0.5)
 }
 
@@ -38,7 +38,7 @@ header {
 
 .watchlist-link {
     align-self: center;
-    text-decoration: underline rgb(125,125,150, 0.75);
+    text-decoration: underline rgb(150,150,150, 0.5);
     text-decoration-thickness: 1.5px;
     text-shadow: 0 0 7px black;
     font-family: 'Times New Roman', Times, serif;
@@ -355,10 +355,6 @@ input:focus {
         padding-bottom: .75em;
     }
 
-    .watch-header {
-        margin-bottom: 1em;
-    }
-
     .watchlist-link {
         margin-top: .4em;
     }
@@ -373,6 +369,7 @@ input:focus {
     body {
         width: 100%;
         max-width: 100%;
+        padding-bottom: .5em;
     }
 
     #results-section, #watchlist-results {
