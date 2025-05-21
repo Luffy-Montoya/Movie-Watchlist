@@ -340,7 +340,7 @@ input:focus {
 @media (min-width: 600px) and (max-width: 1000px) {
 
     .movie-poster {
-        max-height: 45vh;
+        max-height: 40vh;
         max-height: 300px;
     }
 
