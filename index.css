@@ -32,7 +32,7 @@ header {
     font-size: 2.15rem;
     font-weight: normal;
     text-shadow: 0 0 7px black;
-    color: rgb(255,255,255, .5);
+    color: rgb(255,255,255, .7);
 }
 
 .watchlist-link {
@@ -43,11 +43,11 @@ header {
     font-family: 'Times New Roman', Times, serif;
     margin-top: .5em;
     font-size: 1.15rem;
-    color: rgb(255,255,255, .5);
+    color: rgb(255,255,255, .8);
 }
 
 .watchlist-link:visited {
-    color: rgb(255,255,255, .5);
+    color: rgb(255,255,255, .8);
 }
 
 .watchlist-link:hover {
@@ -386,7 +386,7 @@ input:focus {
 
     .watchlist-link {
         font-size: 1.5rem;
-        margin-top: .4em;
+        margin-top: .7em;
         margin-right: 4.5em;
     }
 
