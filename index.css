@@ -32,7 +32,7 @@ header {
     font-size: 2.15rem;
     font-weight: normal;
     text-shadow: 0 0 7px black;
-    color: rgb(255,255,255, .9);
+    color: rgb(255,255,255, .5);
 }
 
 .watchlist-link {
@@ -43,11 +43,11 @@ header {
     font-family: 'Times New Roman', Times, serif;
     margin-top: .5em;
     font-size: 1.15rem;
-    color: rgb(255,255,255, .95);
+    color: rgb(255,255,255, .5);
 }
 
 .watchlist-link:visited {
-    color: rgb(240,240,255);
+    color: rgb(255,255,255, .5);
 }
 
 .watchlist-link:hover {
@@ -325,6 +325,10 @@ input:focus {
     text-decoration: underline rgb(215,215,230);
 }
 
+#results-section {
+    box-shadow: 0 0px 7px rgb(0,0,0,0.5);
+}
+
 @media (min-width: 600px) and (max-width: 1000px) {
 
     .movie-poster {
@@ -367,6 +371,7 @@ input:focus {
         grid-template-columns: repeat(2, 1fr);
         width: 90vw;
         margin: 0 auto;
+        box-shadow: none;
     }
 
     header {
