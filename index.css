@@ -4,6 +4,7 @@ body {
     font-family: sans-serif;
     background: rgb(215,215,225);
     margin: 0 auto;
+    padding-bottom: .5em;
 }
 
 header {
