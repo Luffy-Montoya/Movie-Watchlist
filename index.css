@@ -334,7 +334,7 @@ input:focus {
     text-decoration: underline rgb(215,215,230);
 }
 
-#results-section {
+#results-section, #watchlist-results {
     box-shadow: 0 0px 7px rgb(0,0,0,0.35);
 }
 
