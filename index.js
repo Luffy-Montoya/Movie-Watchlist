@@ -11,8 +11,11 @@ if (watchlistLocalStorage) {
 
 if (lastSearchLocalStorage) {
     searchInput.value = lastSearchLocalStorage
-    getData()
+} else {
+    searchInput.value = "Life"
 }
+
+getData()
 
 async function getData() {
     const res = await fetch(`https://www.omdbapi.com/?s=${searchInput.value}&apikey=c67d68ae`)

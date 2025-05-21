@@ -2,7 +2,7 @@ body {
     max-width: 500px;
     width: 100%;
     font-family: sans-serif;
-    background: rgb(250,250,250);
+    background: rgb(235,235,240);
     margin: 0 auto;
 }
 
@@ -11,16 +11,49 @@ header {
     justify-content: space-between;
     padding: 0 3vw;
     align-content: center;
+    background: linear-gradient(165deg, rgb(50, 50, 20, 0.9), rgb(25, 25, 75, 0.8)), url("https://wallpapercat.com/w/full/1/a/f/1381070-3840x2160-desktop-4k-film-wallpaper-image.jpg");
+    background-size: cover;
+    height: 25vh;
+    padding-bottom: 1em;
+}
+
+.watch-header {
+    background: linear-gradient(165deg, rgb(50, 50, 20, 0.9), rgb(25, 25, 75, 0.85)), url("https://wallpapers.com/images/hd/movie-poster-background-q1zm830g0hfww2lk.jpg");
+    background-size: cover;
+    padding-bottom: 0;
+}
+
+.heading {
+    align-self: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.15rem;
+    font-weight: normal;
+    text-shadow: 0 0 7px black;
+    color: rgb(255,255,250);
 }
 
 .watchlist-link {
     align-self: center;
+    text-decoration: underline rgb(255,255,255, 0.25);
+    text-shadow: 0 0 7px black;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: .6em;
+    font-size: 1.15rem;
+    color: rgb(240,240,255);
+}
+
+.watchlist-link:visited {
+    color: rgb(240,240,255);
+}
+
+.watchlist-link:hover {
+    text-shadow: 0 0 7px rgb(255,255,255, 0.5);
+    transition: .2s;
 }
 
 input {
-    background: url("https://img.icons8.com/ios7/600/search.png") no-repeat left/1.35em;
-    background-color: rgb(255,255,255,0.6);
-    background-blend-mode: lighten;
+    background: linear-gradient(180deg, rgb(255,255,255,0.6), rgb(255,255,255,0.6)), url("https://img.icons8.com/ios7/600/search.png") no-repeat left/1.35em;
+    background-color: rgb(255,255,255);
     background-position: 2% 45%;
     padding-left: 2.1em;
     border: 1px solid gray;
@@ -29,6 +62,7 @@ input {
     width: 50%;
     font-size: 1rem;
     justify-self: center;
+    opacity: 100%;
 }
 
 input:focus {
@@ -44,6 +78,8 @@ input:focus {
     justify-content: center;
     width: 100%;
     margin-bottom: 0.5em;
+    height: 2em;
+    margin-top: -1em;
 }
 
 #button {
@@ -252,9 +288,38 @@ input:focus {
     color: rgb(125, 215, 170)
 }
 
+.empty-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+    margin-top: 7vh;
+    gap: 1em;
+    color: rgb(75,75,75)
+}
+
+.empty-link {
+    text-decoration: underline rgb(175,175,190);
+}
+
+.empty-link:visited {
+    color: rgb(75,75,75)
+}
+
+.empty-link:hover {
+    color: rgb(125,125,125);
+    text-decoration: underline rgb(200,200,210);
+}
+
+.empty-link:active {
+    color: rgb(150,150,150);
+    text-decoration: underline rgb(215,215,230);
+}
+
 @media (min-width: 600px) and (max-width:1000px) {
     .movie-poster {
-        max-height: 60vh;
+        max-height: 50vh;
     }
 
     body {
