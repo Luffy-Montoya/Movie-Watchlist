@@ -63,10 +63,10 @@ async function renderWatchList(){
             }
         })
     } else {
-        watchlistResults.innerHTML = `
+        document.getElementById("empty-section").innerHTML = `
         <div class="empty-container">
             <div class="empty">Your Watchlist is empty.</div>
-            <a class="empty-link" href="/index.html">Go find some movies!</a>
+            <a class="empty-link" href="/Movie%20Watchlist/index.html">Go find some movies!</a>
         </div>`
     }
 }
