@@ -9,7 +9,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 0 3vw;
+    padding: 0 4vw;
     align-content: center;
     background: linear-gradient(165deg, rgb(50, 50, 20, 0.9), rgb(25, 25, 75, 0.8)), url("https://wallpapercat.com/w/full/1/a/f/1381070-3840x2160-desktop-4k-film-wallpaper-image.jpg");
     background-size: cover;
@@ -38,7 +38,7 @@ header {
     text-decoration-thickness: 1.5px;
     text-shadow: 0 0 7px black;
     font-family: 'Times New Roman', Times, serif;
-    margin-top: .6em;
+    margin-top: .5em;
     font-size: 1.15rem;
     color: rgb(240,240,255);
 }
@@ -197,7 +197,7 @@ input:focus {
 .remove {
     border: 1px solid rgb(125,25,25);
     color: white;
-    background: linear-gradient(180deg, rgb(200,50,50), rgb(245,155,155));
+    background: linear-gradient(180deg, rgb(175,50,50), rgb(215,155,155));
     font-size: 1.15rem;
     cursor: pointer;
     padding: 4px 5px;
@@ -207,12 +207,12 @@ input:focus {
 }
 
 .remove:hover {
-    background: linear-gradient(180deg, rgb(235,80,80), rgb(250,175,175));
+    background: linear-gradient(180deg, rgb(200,80,80), rgb(230,175,175));
     border: 1px solid rgb(150,35,35);
 }
 
 .remove:active {
-    background: linear-gradient(180deg, rgb(245,100,100), rgb(255,190,190));
+    background: linear-gradient(180deg, rgb(215,100,100), rgb(240,190,190));
     border: 1px solid rgb(175,50,50);
 }
 
@@ -319,7 +319,8 @@ input:focus {
     text-decoration: underline rgb(215,215,230);
 }
 
-@media (min-width: 600px) and (max-width:1000px) {
+@media (min-width: 600px) and (max-width: 1000px) {
+
     .movie-poster {
         max-height: 50vh;
     }
@@ -329,6 +330,47 @@ input:focus {
     }
 
     header {
-        height: 35vh;
+        height: 40vh;
+        padding: 0 6vw;
+        padding-bottom: .75em;
+    }
+
+    .watchlist-link {
+        margin-top: .4em;
+    }
+}
+
+@media (min-width: 1001px) {
+
+    html {
+    background: rgb(215,215,225)
+    }
+
+    body {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #results-section, #watchlist-results {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    header {
+        padding: 0 8vw;
+        height: 45vh;
+        padding-bottom: .5em;
+    }
+
+    .heading {
+        font-size: 2.75rem;
+    }
+
+    .watchlist-link {
+        font-size: 1.25rem;
+        margin-top: 1em;
+        margin-right: 4.5em;
     }
 }
