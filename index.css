@@ -60,7 +60,7 @@ input {
     background-color: rgb(255,255,255);
     background-position: 2% 45%;
     padding-left: 2.1em;
-    border: 1px solid rgb(175,175,175);
+    border: 1px solid rgb(150,150,150);
     border-radius: 17px 0 0 17px;
     line-height: 1.75;
     width: 50%;
@@ -88,7 +88,7 @@ input:focus {
 }
 
 #button {
-    border: 1px solid rgb(160,160,160);
+    border: 1px solid rgb(150,150,150);
     border-left: none;
     border-radius: 0 17px 17px 0;
     padding-right: .65em;
