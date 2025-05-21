@@ -326,7 +326,7 @@ input:focus {
 }
 
 #results-section {
-    box-shadow: 0 0px 7px rgb(0,0,0,0.5);
+    box-shadow: 0 2px 7px rgb(0,0,0,0.5);
 }
 
 @media (min-width: 600px) and (max-width: 1000px) {
