@@ -377,12 +377,12 @@ input:focus {
     }
 
     .heading {
-        font-size: 2.75rem;
+        font-size: 3rem;
     }
 
     .watchlist-link {
-        font-size: 1.25rem;
-        margin-top: 1em;
+        font-size: 1.5rem;
+        margin-top: .4em;
         margin-right: 4.5em;
     }
 
