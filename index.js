@@ -25,6 +25,8 @@ async function getData() {
 
     if (results) {
 
+        document.getElementById("empty-section").innerHTML = ""
+
         results.map(async function(obj){
             const filmRes = await fetch(`https://www.omdbapi.com/?i=${obj.imdbID}&apikey=c67d68ae`)
             const filmData = await filmRes.json()
