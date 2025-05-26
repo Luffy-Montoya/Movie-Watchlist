@@ -161,6 +161,7 @@ input:focus {
     margin-right: 1em;
     max-width: 30vw;
     justify-self: center;
+    box-shadow: 2px 2px 7px rgb(0,0,0,0.5)
 }
 
 .add-to-watchlist {
